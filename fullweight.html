@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>converter</title>
+    <script src="style.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="display-5 text-center">WEIGHT CONVERTER</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="number" class="form-control form-control-lg" placeholder="Enter the no..." id="input" oninput="pkg()">
+                        <select name="weight" class="custom-select" oninput="pkg()" id="opt" >
+                            <option selected id="cle">Weight Option</option>
+                            <option id="kg" value="kg">Kilograms</option>
+                            <option id="g" value="g">Grams</option>
+                            <option id="lbs" value="lbs">Pounds</option>
+                           <!-- <option id="n" value="n">Newtons</option>
+                            <option id="mg" value="mg">Milligrams</option>-->
+                            <option id="lit" value="lit">Liters</option>
+                            <!--<option id="ton" value="ton">Tons</option>
+                            <option id="oun" value="oun">Ounce</option>-->
+                        </select>
+                    </div>
+                </form>
+                <div class="output">
+                    <div class="card bg-primary mb-2">
+                        <div class="card-block">
+                            <h4>Kilograms:</h4>
+                            <div id="kgoutput"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-success mb-2">
+                        <div class="card-block">
+                            <h4>Grams:</h4>
+                            <div id="gramoutput"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-warning mb-2">
+                        <div class="card-block">
+                            <h4>Pound:</h4>
+                            <div id="poundoutput"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-danger mb-2">
+                        <div class="card-block">
+                            <h4>Newtons:</h4>
+                            <div id="newtons"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-primary mb-2">
+                            <div class="card-block">
+                                <h4>Milligrams:</h4>
+                                <div id="milligrams"></div>
+                            </div>
+                        </div>
+                    <div class="card bg-danger mb-2">
+                        <div class="card-block">
+                            <h4>Liters:</h4>
+                            <div id="liters"></div>
+                        </div>
+                    </div>
+                    <div class="card bg-warning mb-2">
+                            <div class="card-block">
+                                <h4>Tons:</h4>
+                                <div id="tons"></div>
+                            </div>
+                        </div>
+                        <div class="card bg-primary mb-2">
+                                <div class="card-block">
+                                    <h4>Ounce:</h4>
+                                    <div id="ounces"></div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
